@@ -364,22 +364,7 @@
   
 }
 
-    /* СКРИВА всички, освен втория продукт в слайдера */
-#products .product-item:not(:nth-child(2)) {
-    display: none !important;
-}
-
-/* СКРИВА всички detail секции, освен detail2 */
-.product-detail:not(#detail2) {
-    display: none !important;
-}
-
-/* СКРИВА стрелките и точките */
-.slider .prev,
-.slider .next,
-.dots {
-    display: none !important;
-}
+   
 
     .contacts-icons a.whatsapp:hover svg {
   fill: #25D366;
@@ -541,8 +526,8 @@ while creating new products and expanding the <strong>“Lord I&G”</strong> br
     <img src="sami.png" alt="Sami" class="about-img">
     <div class="about-text">
       <p>
-       More than 15 years we have worked hard to improve the taste and quality of our products, as well as their modern appearance.
-<strong>“Lord I&G Bulgaria” Ltd.</strong> has been growing dynamically and successfully, establishing itself on international markets for over 10 years
+       More than 25 years we have worked hard to improve the taste and quality of our products, as well as their modern appearance.
+<strong>“Lord I&G Bulgaria” Ltd.</strong> has been growing dynamically and successfully, establishing itself on international markets for over 15 years
 with partners in France, Lithuania, Latvia, Belarus, and the USA.
 Interest in our products continues to grow from other markets and foreign clients as well.
       </p>
@@ -766,33 +751,7 @@ document.addEventListener("scroll", () => {
 </script>
 
 
-  <script>
-/* ДЕАКТИВИРАМЕ СЛАЙДЕРА И АВТОПЛЕЯ */
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelector(".slides");
-
-  /* Нулираме всякакво местене */
-  if (slides) {
-    slides.style.transform = "translateX(0)";
-    slides.style.transition = "none";
-  }
-
-  /* Спираме автоплей интервала, ако е създаден */
-  if (typeof auto !== "undefined") {
-    clearInterval(auto);
-  }
-
-  /* Деактивираме бутоните завинаги */
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
-  if (prev) prev.style.display = "none";
-  if (next) next.style.display = "none";
-
-  /* Скриваме точките */
-  const dots = document.querySelector(".dots");
-  if (dots) dots.style.display = "none";
-});
-</script>
+  
 <footer class="webbadoo-credit">
   © 2025 design by <a href="https://webbadoo.com" target="_blank"><strong>webbadoo</strong></a>
 </footer>

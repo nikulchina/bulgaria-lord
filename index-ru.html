@@ -362,22 +362,7 @@
   border-radius: 14px;
 }
 
-    /* СКРИВА всички, освен втория продукт в слайдера */
-#products .product-item:not(:nth-child(2)) {
-    display: none !important;
-}
-
-/* СКРИВА всички detail секции, освен detail2 */
-.product-detail:not(#detail2) {
-    display: none !important;
-}
-
-/* СКРИВА стрелките и точките */
-.slider .prev,
-.slider .next,
-.dots {
-    display: none !important;
-}
+   
 
     .contacts-icons a.whatsapp:hover svg {
   fill: #25D366;
@@ -539,9 +524,9 @@
     <img src="sami.png" alt="Экип" class="about-img">
     <div class="about-text">
       <p>
-        Уже более 15 лет мы упорно работаем над улучшением вкуса и качества нашей продукции, 
+        Уже более 25 лет мы упорно работаем над улучшением вкуса и качества нашей продукции, 
         а также над её современным внешним видом.  
-        Компания <strong>«Лорд Ай энд Джи България» ЕООД</strong> динамично и успешно развивается и более 10 лет 
+        Компания <strong>«Лорд Ай энд Джи България» ЕООД</strong> динамично и успешно развивается и более 15 лет 
         присутствует на международных рынках с партнёрами из Франции, Литвы, Латвии, Беларуси и США.  
         Интерес к нашим продуктам продолжает расти и со стороны других рынков и зарубежных клиентов.
       </p>
@@ -794,29 +779,7 @@ document.addEventListener("scroll", () => {
   });
 </script>
 
-  <script>
-/* ДЕАКТИВИРАМЕ СЛАЙДЕРА И АВТОПЛЕЯ */
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelector(".slides");
-
-  if (slides) {
-    slides.style.transform = "translateX(0)";
-    slides.style.transition = "none";
-  }
-
-  if (typeof auto !== "undefined") {
-    clearInterval(auto);
-  }
-
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
-  if (prev) prev.style.display = "none";
-  if (next) next.style.display = "none";
-
-  const dots = document.querySelector(".dots");
-  if (dots) dots.style.display = "none";
-});
-</script>
+ 
 
 <footer class="webbadoo-credit">
   © 2025 design by <a href="https://webbadoo.com" target="_blank"><strong>webbadoo</strong></a>

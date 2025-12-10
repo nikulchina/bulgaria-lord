@@ -363,22 +363,6 @@
   
 }
 
-    /* СКРИВА всички, освен втория продукт в слайдера */
-#products .product-item:not(:nth-child(2)) {
-    display: none !important;
-}
-
-/* СКРИВА всички detail секции, освен detail2 */
-.product-detail:not(#detail2) {
-    display: none !important;
-}
-
-/* СКРИВА стрелките и точките */
-.slider .prev,
-.slider .next,
-.dots {
-    display: none !important;
-}
 
     .contacts-icons a.whatsapp:hover svg {
   fill: #25D366;
@@ -540,8 +524,8 @@
     <img src="sami.png" alt="Sami" class="about-img">
     <div class="about-text">
       <p>
-        Повече от 15 години ние работим усърдно за подобряване на вкуса и качеството на нашите продукти и тяхната модерна визия.  
-        Компанията <strong>“Лорд Ай Енд Джи България” ЕООД</strong> се развива динамично и успешно и повече от 10 години се налага на международните пазари 
+        Повече от 25 години ние работим усърдно за подобряване на вкуса и качеството на нашите продукти и тяхната модерна визия.  
+        Компанията <strong>“Лорд Ай Енд Джи България” ЕООД</strong> се развива динамично и успешно и повече от 15 години се налага на международните пазари 
         с партньори от Франция, Литва, Латвия, Беларус и САЩ.  
         Интересът към нашите продукти продължава да расте и от други пазари и чуждестранни клиенти.
       </p>
@@ -761,33 +745,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-  <script>
-/* ДЕАКТИВИРАМЕ СЛАЙДЕРА И АВТОПЛЕЯ */
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelector(".slides");
-
-  /* Нулираме всякакво местене */
-  if (slides) {
-    slides.style.transform = "translateX(0)";
-    slides.style.transition = "none";
-  }
-
-  /* Спираме автоплей интервала, ако е създаден */
-  if (typeof auto !== "undefined") {
-    clearInterval(auto);
-  }
-
-  /* Деактивираме бутоните завинаги */
-  const prev = document.querySelector(".prev");
-  const next = document.querySelector(".next");
-  if (prev) prev.style.display = "none";
-  if (next) next.style.display = "none";
-
-  /* Скриваме точките */
-  const dots = document.querySelector(".dots");
-  if (dots) dots.style.display = "none";
-});
-</script>
+ 
 <footer class="webbadoo-credit">
   © 2025 design by <a href="https://webbadoo.com" target="_blank"><strong>webbadoo</strong></a>
 </footer>
