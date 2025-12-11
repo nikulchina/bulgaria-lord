@@ -443,21 +443,25 @@
     padding-top: 80px; /* колкото е височината на навбара */
   }
 }
-/* Допълнително фиксиране на позицията за мобилни – A13, S10, S20 */
+/* Фиксирана и стабилна позиция на логото върху мобилен екран */
 @media (max-width: 768px) {
+
+  /* Повече въздух над логото → измества се в чистата част на фона */
+  .hero {
+    padding-top: 120px !important; /* вместо 80px → контролира издигането */
+  }
+
+  /* Стабилна височина и центриране */
   .hero .headline {
-    position: absolute;
-    top: 12vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
+    margin-top: 0 !important;
   }
 
   .hero .headline img {
-    width: 100%;
+    max-width: 200px !important;
     opacity: 0.75;
   }
 }
+
 
   </style>
 </head>
