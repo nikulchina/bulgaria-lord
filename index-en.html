@@ -446,6 +446,21 @@
     padding-top: 80px; /* колкото е височината на навбара */
   }
 }
+/* Допълнително фиксиране на позицията за мобилни – A13, S10, S20 */
+@media (max-width: 768px) {
+  .hero .headline {
+    position: absolute;
+    top: 12vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+  }
+
+  .hero .headline img {
+    width: 100%;
+    opacity: 0.75;
+  }
+}
 
   </style>
 </head>
