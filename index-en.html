@@ -427,6 +427,25 @@
     padding-bottom: 20px !important;
 }
 
+@media (max-width: 768px) {
+  /* смаляване на логото двойно */
+  .hero .headline img {
+    max-width: 200px !important;
+  }
+
+  /* вдигане на логото нагоре, така че да е на 10px от навбара */
+  .hero .headline {
+    margin-top: 10px !important; 
+  }
+
+  /* понеже hero е 100vh, вдигаме цялото съдържание леко нагоре */
+  .hero {
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: center;
+    padding-top: 80px; /* колкото е височината на навбара */
+  }
+}
 
   </style>
 </head>
