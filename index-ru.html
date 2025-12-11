@@ -427,7 +427,7 @@
 @media (max-width: 768px) {
   /* смаляване на логото двойно */
   .hero .headline img {
-    max-width: 200px !important;
+    max-width: 180px !important;
   }
 
   /* вдигане на логото нагоре, така че да е на 10px от навбара */
@@ -440,27 +440,10 @@
     display: flex;
     align-items: flex-start !important;
     justify-content: center;
-    padding-top: 80px; /* колкото е височината на навбара */
+    padding-top: 65px; /* колкото е височината на навбара */
   }
 }
-/* Фиксирана и стабилна позиция на логото върху мобилен екран */
-@media (max-width: 768px) {
 
-  /* Повече въздух над логото → измества се в чистата част на фона */
-  .hero {
-    padding-top: 120px !important; /* вместо 80px → контролира издигането */
-  }
-
-  /* Стабилна височина и центриране */
-  .hero .headline {
-    margin-top: 0 !important;
-  }
-
-  .hero .headline img {
-    max-width: 200px !important;
-    opacity: 0.75;
-  }
-}
 
 
   </style>
